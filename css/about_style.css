@@ -1,0 +1,58 @@
+/* about */
+#header-inner{
+    background: var(--bg-img) no-repeat 20% 30%/cover;
+    height: 5.5rem;
+    border-bottom: 3px solid var(--main-color);
+}
+#about-a .about-info{
+    display: grid;
+    grid-template-areas: 
+        'bioimage bio bio'
+        'scl scl1 clg' ;
+    grid-gap: 1.2rem;
+}
+.bio-image{
+    grid-area: bioimage;
+    
+}
+.bio{
+    grid-area: bio;
+    border-left: 3px solid var(--main-color);
+    padding: 0.8rem;
+        
+}
+.scl{
+    grid-area: scl;
+}
+.scl1{
+    grid-area: scl1;
+}
+.clg{
+    grid-area: clg;
+}
+
+/* About-b */
+
+#about-b .progress{
+    overflow: hidden;
+    height: 20px;
+    background: var(--medium-color);
+    border-radius: 5px;
+    margin-bottom: 0.6rem;
+}
+
+#about-b .progress div{
+    height: 100%;
+    color: #fff;
+    background: var(--main-color);
+    text-align: center;
+}
+/* about-c */
+/* #about-c .about-logos{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 2rem;
+}
+#about-c .about-logos img{
+    width: 70px;
+} */

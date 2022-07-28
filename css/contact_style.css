@@ -1,0 +1,127 @@
+/* contact page */
+#contact-a .text-fields{
+    display: grid;
+    grid-template-areas: 
+        'name email'
+        'subject phone'
+        'message message';
+    grid-gap: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.name-input{
+    grid-area: name;
+}
+.subject-input{
+    grid-area: subject;
+}
+.email-input{
+    grid-area: email;
+}
+.phone-input{
+    grid-area: phone;
+}
+.message-input{
+    grid-area: message;
+    height: 100px;
+}
+.text-input{
+    padding: 0.5rem 1rem;
+}
+
+button[type='submit']{
+    width: 50%;
+}
+/* area  */
+
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-gap: 1rem; */
+    
+}
+.contact-info a i{
+    color: #fff;
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin: auto;
+
+}
+.contact-info div{
+    padding: 1rem;
+    transition:all 1.5s;
+}
+.contact-info div a i{transition: all 1.5s;}
+#gmail{
+    background: #BB001B;
+    /* margin-top: 1rem; */
+}
+#twitter{
+    background: #00acee;
+    /* margin-top: 1rem; */
+}
+#instagram{
+    /* background: #f09433;  */
+    /* background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);  */
+    /* background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);  */
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    /* margin-bottom: 1rem; */
+}
+#facebook{
+    background:#3b5998;
+    /* margin-bottom: 1rem; */
+}
+#linkedin{
+    background: #0e76a8;
+    /* margin-bottom: 1rem; */
+}
+#github{
+    background: #171515;
+    /* margin-top: 1rem; */
+}
+
+/* transitions */
+#gmail:hover{background: var(--light-color);
+    border-radius: 10%;
+    /* box-shadow: 2px 0px 60px 1px var(--dark-color); */
+
+}
+#gmail:hover a i{color: #BB001B;}
+
+#github:hover{background: var(--light-color);
+    border-radius: 10%;
+    /* box-shadow: 2px 0px 60px 1px var(--dark-color); */
+
+}
+#github:hover a i{color: #171515;}
+
+#twitter:hover{background: var(--light-color);
+    border-radius: 10%;
+    /* box-shadow: 2px 0px 60px 1px var(--dark-color); */
+
+}
+#twitter:hover a i{color: #00acee;}
+
+#instagram:hover{background: var(--light-color);
+    border-radius: 10%;
+    /* box-shadow: 2px 0px 60px 1px var(--dark-color); */
+
+}
+#instagram:hover a i{color: #dc2743;}
+
+#facebook:hover{background: var(--light-color);
+    border-radius: 10%;
+    /* box-shadow: 2px 0px 60px 1px var(--dark-color); */
+
+}
+#facebook:hover a i{color: #3b5998;}
+
+#linkedin:hover{background: var(--light-color);
+    border-radius: 10%;
+    /* box-shadow: 2px 2px 60px 1px var(--dark-color); */
+
+}
+#linkedin:hover a i{color: #0e76a8;}
