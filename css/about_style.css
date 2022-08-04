@@ -46,6 +46,64 @@
     color: #fff;
     background: var(--main-color);
     text-align: center;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.photoshop{animation-name: photoshop;}
+.html{animation-name: html;}
+.css{animation-name: css;}
+.javascript{animation-name: javascript;}
+.c{animation-name: c;}
+.java{animation-name: java;}
+
+@keyframes photoshop{
+    from{
+        width: 0%
+    }
+    to{
+        width: 65%;
+    }
+}
+@keyframes html{
+    from{
+        width: 0%
+    }
+    to{
+        width: 75%;
+    }
+}
+@keyframes css{
+    from{
+        width: 0%
+    }
+    to{
+        width: 75%;
+    }
+}
+@keyframes javascript{
+    from{
+        width: 0%
+    }
+    to{
+        width: 20%;
+    }
+}
+@keyframes c{
+    from{
+        width: 0%
+    }
+    to{
+        width: 70%;
+    }
+}
+@keyframes java{
+    from{
+        width: 0%
+    }
+    to{
+        width: 20%;
+    }
 }
 /* about-c */
 /* #about-c .about-logos{
