@@ -171,7 +171,8 @@ img{
 #main-footer{
     background: var(--dark-color);
     color: #fff;
-    height: 5rem;
+    height: 4rem;
+    position: sticky;
 }
 #main-footer .footer-content{
     display: flex;
