@@ -88,15 +88,40 @@ img{
 
 /* home sections */
 #home-a .specials{
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     grid-template-columns: repeat(3,1fr);
 }
 #home-a .fa-2x{
     color: var(--main-color);
     padding-bottom: 0.4rem;
 }
+#home-a .thecard{
+    height: 8rem;
+    padding: 3rem 0 3rem 0;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+#home-a .thecard:hover{
+    transform: rotateY(180deg);
+}
+#home-a .front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+#home-a .back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
 #home-b .stats{
     display: grid;
     grid-template-columns: repeat(4,1fr);
